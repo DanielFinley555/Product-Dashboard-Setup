@@ -1,8 +1,8 @@
 //Task 3: Create the ProductList Component
 
-//using map render each product
 import React from 'react';
 
+//using map render each product
 function ProductList() {
     return (
         <div>
