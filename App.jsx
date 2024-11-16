@@ -4,11 +4,15 @@
 
 //Task 2: Create the App Component
 
+// ParentComponent
 import React, {useState} from 'react';
+import ProductList from './ProductList';
+import ProductItem from './ProductItem';
 
-function Add() {
+//Creating add product parent funtion
+function AddProduct() {
 //Using useState to initialize product list
-    const [product, setProduct] = useState([
+    const [products, setProducts] = useState([
         { id: 1, name: 'Laptop', price: 850, description: 'A portable computer'},
         { id: 2, name: 'TV', price: 400, description: 'electroncic object that can display visuals'},
         { id: 3, name: 'Speaker', price: 125, description: 'To listen to audio out loud'},
@@ -16,12 +20,7 @@ function Add() {
         { id: 5, name: 'Headphones', price: 200, description: 'Placed over your head and ears to listion to audio' },
     ]);
 
-//Creating add product funtion
-    function AddProductForm() {
-        const [products, setProducts] = useState([]);
-        
-        const addProduct = (product) => {
-            
+        const addProduct = () => {
             setProducts([...products, product]);
         };
         
@@ -37,6 +36,5 @@ function Add() {
                 </div>
             );
         }
-    }
 
-    export default Add;
+    export default AddProduct;

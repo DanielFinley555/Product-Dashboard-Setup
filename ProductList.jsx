@@ -2,9 +2,10 @@
 
 import React from 'react';
 
-//using map render each product
-function ProductList() {
+//Creating ProductList function
+function ProductList({products}) {
     return (
+        //using map render each product
         <div>
             <h2>Product List</h2>
             <ul>

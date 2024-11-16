@@ -1,11 +1,10 @@
 //Task 4: Create the ProductItem Component
 
-import React, { useState } from 'react';
+//ChildComponent
+import React from 'react';
 
-
-function ProductItem() {
-    const [name, price, description] = useState("Initial Message");
-
+//creating child component funtion
+function ProductItem({name, price, description}) {
     return (
         <div>
             <h1>Name: {name}</h1>
